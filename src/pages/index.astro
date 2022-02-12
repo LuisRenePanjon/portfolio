@@ -1,10 +1,13 @@
 ---
 // Component Imports
 import MainHead from '../components/MainHead.astro';
+import {Skills} from '../components/Skills/index.jsx'
 import Button from '../components/Button/index.jsx';
 import Nav from '../components/Nav/index.jsx';
 import Footer from '../components/Footer/index.jsx';
 import PortfolioPreview from '../components/PortfolioPreview/index.jsx';
+
+
 
 // Data Fetching: List all Markdown posts in the repo.
 const projects = Astro.fetchContent('./project/**/*.md');
@@ -16,13 +19,16 @@ const featuredProject = projects[0];
 
 <html lang="en">
 	<head>
-		<MainHead title="Jeanine White: Personal Site" description="Jeanine White: Developer, Speaker, and Writer..." />
+		<MainHead title="Reneloper: Personal Site" description="René: Software engineer" />
 		<style lang="scss">
 			$w-s: 750px;
 
 			.hero {
 				position: relative;
 				overflow: hidden;
+				/* border-radius: 100px; */
+				/* border-bottom-left-radius: 8rem;
+				border-bottom-right-radius: 8rem; */
 
 				@media (min-width: $w-s) {
 					height: 45vw;
@@ -97,6 +103,7 @@ const featuredProject = projects[0];
 				font-size: var(--f-u8);
 				margin-top: 4rem;
 				margin-bottom: 2rem;
+				color: #90aab7;
 			}
 
 			.role {
@@ -167,12 +174,20 @@ const featuredProject = projects[0];
 				font-weight: 400;
 				font-size: var(--f-d6);
 				letter-spacing: -0.0625em;
+
 			}
+
+			body{
+				background-color: #2b2a33;
+			}
+			/* h1,span {
+				color: 
+			} */
 
 			.bio {
 				line-height: 2;
 				margin-bottom: 2rem;
-
+				color: white;
 				> span:first-of-type {
 					line-height: 1;
 					margin-bottom: 0.5em;
@@ -181,6 +196,7 @@ const featuredProject = projects[0];
 					font-size: var(--f-u4);
 				}
 			}
+
 		</style>
 	</head>
 	<body>
@@ -198,14 +214,13 @@ const featuredProject = projects[0];
 			<div class="gradient2"></div>
 			<div class="overlay">
 				<h1 class="title">
-					<small class="subtitle">The personal site of </small>Jeanine White
+					<small class="subtitle">The personal site of </small>Luis René Panjón
 				</h1>
 				<div>
-					<span class="role">👩‍💻 Developer <span class="invert">👩‍💻 Developer</span></span>&nbsp;
-					<span class="role">🎤 Speaker <span class="invert">🎤 Speaker</span></span>&nbsp;
-					<span class="role">✏️ Writer <span class="invert">✏️ Writer</span></span>
+					<span class="role">👩‍💻 Software Engineer <span class="invert">👩‍💻 Software Engineer</span></span>&nbsp;
+					<span class="role">🎸 Music lover <span class="invert">🎸 Music lover</span></span>
 				</div>
-				<p class="desc">Lover of dogs, roadtrips, and poetry.</p>
+				<p class="desc">Lover of technology, music, gastronomy.</p>
 			</div>
 		</header>
 		<main class="wrapper mt4 mb4">
@@ -215,21 +230,39 @@ const featuredProject = projects[0];
 					<PortfolioPreview project={featuredProject} />
 					<div class="tac mt4">
 						<a href="/projects">
-							<Button>View All</Button>
+							<!-- <Button  >View All</Button> -->
+							<Button children> View all projects </Button>
 						</a>
 					</div>
 				</div>
 				<div class="section">
 					<h3 class="sectionTitle">About me</h3>
 					<p class="bio">
-						<span>Hello!</span> I’m Jeanine, and this is my website. It was made using{' '}
-						<a href="https://github.com/withastro/astro" target="_blank" rel="nofollow"> Astro </a>, a new way to build static sites. This is just an example template for you to
-						modify.
+						<span>Hello!</span>I’m a person fascinated by the world of technology and constantly
+							learning for it. Being able to generate solutions or make ideas
+							come true is one of the things I like about my profession. My goal
+							is to learn day by day, constantly improve both as a persona and
+							as profesional. I want to highlight my principles that are responsability, honesty and ethics.
 					</p>
 					<p>
 						<a href="/about">Read more</a>
 					</p>
 				</div>
+			</div>
+
+			<div class="grid">
+				<div lass="section">
+					<h3 class="sectionTitle">Skills</h3>
+					<p class="bio">
+						<Skills />
+					</p>
+				</div>
+				<div lass="section">
+					<h3 class="sectionTitle">Principles</h3>
+					<p class="bio">
+						<Skills />
+					</p>
+				</div>		
 			</div>
 		</main>
 		<Footer />

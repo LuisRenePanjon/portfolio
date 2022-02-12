@@ -1,0 +1,52 @@
+.socialicon {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  fill: var(--t-subdue);
+  transition: fill linear 150ms;
+  // margin-right: 0.5rem;
+  &:hover {
+    fill: var(--t-active);
+  }
+}
+.spring {
+  display: block;
+  width: 10rem;
+  height: 6rem;
+  // margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  fill: var(--t-subdue);
+  transition: fill linear 150ms;
+  // margin-right: 0.5rem;
+  &:hover {
+    fill: var(--t-active);
+  }
+}
+.docker {
+  display: block;
+  width: 8rem;
+  height: 6rem;
+  // margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  fill: var(--t-subdue);
+  transition: fill linear 150ms;
+  // margin-right: 0.5rem;
+  &:hover {
+    fill: var(--t-active);
+  }
+}
+
+.title {
+  line-height: 1;
+  margin-bottom: 0.5em;
+  display: block;
+  font-weight: 700;
+  font-size: var(--f-u4);
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+.iconcontainer {
+  display: flex;
+  align-items: center;
+}
