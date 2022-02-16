@@ -2,6 +2,10 @@
 // Component Imports
 import MainHead from '../components/MainHead.astro';
 import {Skills} from '../components/Skills/index.jsx'
+import { Principles } from '../components/Principles/index.jsx'
+
+import { Contact } from '../components/Contact/index.jsx'
+
 import Button from '../components/Button/index.jsx';
 import Nav from '../components/Nav/index.jsx';
 import Footer from '../components/Footer/index.jsx';
@@ -197,6 +201,13 @@ const featuredProject = projects[0];
 				}
 			}
 
+			.contactcontainer { 
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items:center;
+			}
+
 		</style>
 	</head>
 	<body>
@@ -260,9 +271,13 @@ const featuredProject = projects[0];
 				<div lass="section">
 					<h3 class="sectionTitle">Principles</h3>
 					<p class="bio">
-						<Skills />
+						<Principles />
 					</p>
 				</div>		
+			</div>
+			<div class="contactcontainer">
+						<Contact />
+			
 			</div>
 		</main>
 		<Footer />
