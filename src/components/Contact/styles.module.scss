@@ -1,3 +1,22 @@
 .formcontainer {
-  background-color: black;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  display: block;
+  font-weight: 700;
+  font-size: var(--f-u4);
+  color: #8babb6;
+}
+
+.label {
+  color: #8babb6;
+  font-size: var(--f-u2);
+}
+
+.input {
+  border: 1px solid #000;
+  border-radius: 5px;
 }

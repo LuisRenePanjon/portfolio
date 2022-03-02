@@ -12,7 +12,6 @@ import Footer from '../components/Footer/index.jsx';
 import PortfolioPreview from '../components/PortfolioPreview/index.jsx';
 
 
-
 // Data Fetching: List all Markdown posts in the repo.
 const projects = Astro.fetchContent('./project/**/*.md');
 const featuredProject = projects[0];
@@ -190,11 +189,11 @@ const featuredProject = projects[0];
 
 			.bio {
 				line-height: 2;
-				margin-bottom: 2rem;
+				/* margin-bottom: 2rem; */
 				color: white;
 				> span:first-of-type {
 					line-height: 1;
-					margin-bottom: 0.5em;
+					/* margin-bottom: 0.5em; */
 					display: block;
 					font-weight: 700;
 					font-size: var(--f-u4);
@@ -262,7 +261,7 @@ const featuredProject = projects[0];
 			</div>
 
 			<div class="grid">
-				<div lass="section">
+				<div class="section">
 					<h3 class="sectionTitle">Skills</h3>
 					<p class="bio">
 						<Skills />
@@ -275,10 +274,10 @@ const featuredProject = projects[0];
 					</p>
 				</div>		
 			</div>
-			<div class="contactcontainer">
+			<!-- <div class="contactcontainer">
 						<Contact />
 			
-			</div>
+			</div> -->
 		</main>
 		<Footer />
 	</body>
