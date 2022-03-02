@@ -21,12 +21,15 @@ const projects = Astro.fetchContent<MarkdownFrontmatter>('./project/**/*.md')
 				display: grid;
 				grid-gap: 3rem;
 			}
+			body{
+				background-color: #2b2a33;
+			}
 		</style>
 	</head>
 	<body>
 		<Nav />
 		<div class="wrapper">
-			<h1 class="title mt4 mb4">All Projects</h1>
+			<h1 class="title mt4 mb4">My Projects</h1>
 			<div class="grid">
 				{projects.map((project) => <PortfolioPreview project={project} />)}
 			</div>

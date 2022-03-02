@@ -8,11 +8,23 @@
   &:hover {
     fill: var(--t-active);
   }
+  margin-right: 0.5rem;
+}
+.postgres {
+  display: block;
+  width: 11rem;
+  height: 6rem;
+  fill: var(--t-subdue);
+  transition: fill linear 150ms;
+  // margin-right: 0.5rem;
+  &:hover {
+    fill: var(--t-active);
+  }
 }
 .spring {
   display: block;
   width: 10rem;
-  height: 6rem;
+  height: 5rem;
   // margin-right: 0.5rem;
   margin-left: 0.5rem;
   fill: var(--t-subdue);
@@ -25,7 +37,7 @@
 .docker {
   display: block;
   width: 8rem;
-  height: 6rem;
+  height: 5rem;
   // margin-right: 0.5rem;
   margin-left: 0.5rem;
   fill: var(--t-subdue);
@@ -36,17 +48,50 @@
   }
 }
 
+.firestore {
+  display: block;
+  width: 5rem;
+  height: 5rem;
+  margin-left: 1rem;
+  fill: var(--t-subdue);
+  transition: fill linear 150ms;
+  // margin-right: 0.5rem;
+  &:hover {
+    fill: var(--t-active);
+  }
+  margin-right: 0.5rem;
+}
+
 .title {
-  line-height: 1;
-  margin-bottom: 0.5em;
+  // line-height: 1;
+  // margin-bottom: 0.5em;
   display: block;
   font-weight: 700;
   font-size: var(--f-u4);
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
-  color: white;
+  color: #8babb6;
+  // margin-top: 1.5rem;
+  // margin-bottom: 1.5rem;
 }
 .iconcontainer {
   display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+
+}
+
+li {
+  line-height: 2;
+  color: white;
+  font-size: var(--f-u1);
+  // display: block;
+  font-weight: 600;
+}
+
+.itemcontainer {
+  display: flex;
+  // flex-direction: row;
+  // justify-content: space-around;
+
   align-items: center;
 }

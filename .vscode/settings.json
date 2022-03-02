@@ -1,0 +1,5 @@
+{
+  "terminal.integrated.fontFamily": "'MesloLGS NF'",
+  // "terminal.integrated.defaultProfile.linux": "zsh",
+  "editor.fontFamily": "'Cascadia Code'",
+}

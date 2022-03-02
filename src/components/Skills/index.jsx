@@ -6,23 +6,57 @@ export const Skills = () => {
   return (<>
     <span className={Styles.title}>Front-end</span>
     <div className={Styles.iconcontainer}>
-      <img className={Styles.socialicon} src="/assets/html-5.png"/>
-      <img className={Styles.socialicon} src="/assets/css-3.png" />
-      <img className={Styles.socialicon} src="/assets/js.png" />
-      <img className={Styles.socialicon} src="/assets/react.png" />
-      <img className={Styles.socialicon} src="/assets/angular.png" />
+
+      <div className={Styles.itemcontainer}>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>Javascript</li>
+          <li>React</li>
+          <li>Angular</li>
+        </ul>
+      </div>
     </div>
+
+
     <span className={Styles.title}>Back-end</span>
     <div className={Styles.iconcontainer}>
-      <img className={Styles.socialicon} src="/assets/java.png" />
-      <img className={Styles.socialicon} src="/assets/piton.png" />
-      <img className={Styles.spring} src="/assets/spring-boot.png" />
-      <img className={Styles.socialicon} src="/assets/django.png" />
+
+      <div className={Styles.itemcontainer}>
+        <ul>
+          <li>Java</li>
+          <li>Python</li>
+          <li>Spring Boot</li>
+          <li>Django</li>
+        </ul>
+      </div>
+
+
+    </div>
+
+    <span className={Styles.title}>Database</span>
+    <div className={Styles.iconcontainer}>
+
+      <div className={Styles.itemcontainer}>
+        <ul>
+          <li>PostgreSQL</li>
+          <li>MySQL</li>
+          <li>MongoDB</li>
+          <li>Firestore</li>
+        </ul>
+      </div>
+
     </div>
     <span className={Styles.title}>Tools</span>
     <div className={Styles.iconcontainer}>
-      <img className={Styles.socialicon} src="/assets/git.png" />
-      <img className={Styles.docker} src="/assets/docker.png" />
+
+      <div className={Styles.itemcontainer}>
+        <ul>
+          <li>Git</li>
+          <li>Docker</li>
+        </ul>
+      </div>
+
     </div>
   </>
   );

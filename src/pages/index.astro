@@ -2,11 +2,14 @@
 // Component Imports
 import MainHead from '../components/MainHead.astro';
 import {Skills} from '../components/Skills/index.jsx'
+import { Principles } from '../components/Principles/index.jsx'
+
+import { Contact } from '../components/Contact/index.jsx'
+
 import Button from '../components/Button/index.jsx';
 import Nav from '../components/Nav/index.jsx';
 import Footer from '../components/Footer/index.jsx';
 import PortfolioPreview from '../components/PortfolioPreview/index.jsx';
-
 
 
 // Data Fetching: List all Markdown posts in the repo.
@@ -186,15 +189,22 @@ const featuredProject = projects[0];
 
 			.bio {
 				line-height: 2;
-				margin-bottom: 2rem;
+				/* margin-bottom: 2rem; */
 				color: white;
 				> span:first-of-type {
 					line-height: 1;
-					margin-bottom: 0.5em;
+					/* margin-bottom: 0.5em; */
 					display: block;
 					font-weight: 700;
 					font-size: var(--f-u4);
 				}
+			}
+
+			.contactcontainer { 
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items:center;
 			}
 
 		</style>
@@ -251,7 +261,7 @@ const featuredProject = projects[0];
 			</div>
 
 			<div class="grid">
-				<div lass="section">
+				<div class="section">
 					<h3 class="sectionTitle">Skills</h3>
 					<p class="bio">
 						<Skills />
@@ -260,10 +270,14 @@ const featuredProject = projects[0];
 				<div lass="section">
 					<h3 class="sectionTitle">Principles</h3>
 					<p class="bio">
-						<Skills />
+						<Principles />
 					</p>
 				</div>		
 			</div>
+			<!-- <div class="contactcontainer">
+						<Contact />
+			
+			</div> -->
 		</main>
 		<Footer />
 	</body>

@@ -1,23 +1,38 @@
 ---
 layout: ../../layouts/project.astro
-title: Software development
+title: Chipotlebar
 client: chipotlebar.com
 publishDate: 2020-03-02 00:00:00
-img: https://usersnap.com/blog/wp-content/uploads/2016/07/managing-software-projects-1280x720.jpg
-description: In this section are all projects development for me, is a pleasure to show you.
+img: ../../../public/assets/menu.png
+description: Chipotlebar is a web app for administration of categories, products, users, also it allows to make sales.
 
 tags:
-  - software
-  - front-end
-  - back-end
+  - Angular
+  - Firebase services
 ---
 
-Rubber cheese mascarpone cut the cheese. Jarlsberg parmesan cheesy grin cream cheese port-salut stinking bishop ricotta brie. Roquefort when the cheese comes out everybody's happy goat cheese triangles stilton cheese and biscuits goat babybel. Bocconcini roquefort queso danish fontina pecorino.
+<style>
+body {
+    background-color: #2b2a33;
+}
+h2 {
+  color: #8babb6;
+}
 
-Smelly cheese stinking bishop roquefort. Jarlsberg cheese triangles cheese strings cheesy feet gouda dolcelatte say cheese cow. Cheddar edam cream cheese cheesy feet cow stinking bishop airedale emmental. Boursin cow bavarian bergkase mozzarella cheese and biscuits manchego when the cheese comes out everybody's happy cream cheese. Cheese on toast st. agur blue cheese croque monsieur halloumi.
+* {
+  color: white;
+}
+</style>
 
-Fromage frais jarlsberg st. agur blue cheese. Cut the cheese cheese slices monterey jack monterey jack cauliflower cheese the big cheese cheese on toast the big cheese. Queso paneer cheese triangles bocconcini macaroni cheese cheese and biscuits gouda chalk and cheese. Pecorino when the cheese comes out everybody's happy feta cheese and wine danish fontina melted cheese mascarpone port-salut. When the cheese comes out everybody's happy pecorino cottage cheese.
+The chipotle bar web application was developed for a restaurant located in Chordeleg-Ecuador. The purpose of this application is to show customers the restaurant's products. On the part of the restaurant, the application allows you to manage employees, products, services, in addition to allowing you to make sales notes and have sales reports.
 
-Caerphilly parmesan manchego. Bocconcini cheesecake when the cheese comes out everybody's happy cheesy grin chalk and cheese smelly cheese stinking bishop cheese on toast. Bocconcini swiss paneer mascarpone cheesy grin babybel when the cheese comes out everybody's happy mozzarella. Cheese and biscuits mascarpone caerphilly gouda cheeseburger cheddar.
+![alt text](../../../public/assets/adminchipotle.png)
 
-Cheese and biscuits cheesy grin roquefort. Ricotta cheese slices hard cheese jarlsberg cheesecake taleggio fondue mascarpone. Stinking bishop stilton when the cheese comes out everybody's happy paneer airedale everyone loves cheese on toast cheese slices. Ricotta cut the cheese cheese triangles babybel cream cheese ricotta.
+You can see it here: https://chipotlebar.com/
+
+## technologies
+* Angular
+* Firebase
+* Authentication
+  * Firestore
+  * Storage
